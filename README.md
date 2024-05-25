@@ -13,6 +13,9 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ## Project Setup
 
 ```sh
+cd /path/to/my/resume/folder
+git init
+git pull https://github.com/travisl09/resume-builder.git
 npm install
 ```
 
@@ -21,15 +24,23 @@ npm install
 ```sh
 npm run dev
 ```
+Configure routes via /src/router/index.js
+
+Modify DefaultResume.vue according to your needs
+
+To create job specific pages, copy / paste / rename DefaultResume.vue and optionally add a cover letter slot as shown in the BolognaUnlimited.vue example file
 
 ### Compile and Minify for Production
 
+If you named your resumé repository folder something other than 'my-resume', update your /vite.config.js 'base' config value to your repo's name, then:
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Publish to GitHub Pages
 
-```sh
-npm run lint
-```
+Push to a public GitHub repository and configure GitHub pages for the repository via:
+
+Settings -> Pages -> Deploy from a branch | Branch = main | Folder = /docs
+
+View at https://\<username\>.github.io/\<repo-name\>/
