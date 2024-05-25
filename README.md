@@ -36,11 +36,14 @@ If you named your resumé repository folder something other than 'my-resume', up
 ```sh
 npm run build
 ```
+The /docs folder will now contain the resumé site
 
 ### Publish to GitHub Pages
 
-Push to a public GitHub repository and configure GitHub pages for the repository via:
+Commit changes (esp. /docs folder) and push to a public GitHub repository. Configure GitHub pages for the repository via:
 
-Settings -> Pages -> Deploy from a branch | Branch = main | Folder = /docs
+Settings -> Pages -> Deploy from a branch | Branch = main | Folder = /docs -> Save
 
 View at https://\<username\>.github.io/\<repo-name\>/
+
+You can view the build/deployment at \<your-repo-url\>/actions
